@@ -1,0 +1,36 @@
+.names {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+.d3-tooltip {pointer-events: none;}
+.d3-tooltip, .modal-details {
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .4);
+  color: black;
+  font-family: sans-serif;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.d3-tooltip h1, .modal-details h1 {margin: 0 0 10px 0;}
+.d3-tooltip p {margin: 0;}
+.modal-details {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.modal-details ol {
+  list-style-position: inside;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 0;
+}
+.modal-details li {
+  line-height: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.modal-details li:nth-of-type(odd) {background-color: rgba(0, 0, 0, .1);}
